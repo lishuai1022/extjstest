@@ -9,7 +9,7 @@ Ext.define('Packt.view.Header', {
     items: [
         {
             xtype: 'label',
-            html: '<div id="titleHeader">Video Store Manager<span style="font-size:12px;"> - Mastering Ext JS</span></div>'
+            html: '<div id="titleHeader">财富桥策略平台管理系统<span style="font-size:12px;"> - 1.0版</span></div>'
         },
         {
             xtype: 'tbfill'

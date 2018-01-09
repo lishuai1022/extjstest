@@ -37,8 +37,6 @@ Ext.define('Packt.Application', {
         'Ext.form.CheckboxGroup',
         'Packt.view.film.SearchCategory',
         'Packt.view.film.SearchActor',
-
-        'Packt.view.MyViewport',
     ],
 
     views: [
@@ -70,7 +68,7 @@ Ext.define('Packt.Application', {
     init: function() {
 
         // Start the mask on the body and get a reference to the mask
-         splashscreen = Ext.getBody().mask('Loading application', 'splashscreen');
+         splashscreen = Ext.getBody().mask('加载中，请稍后......', 'splashscreen');
 
         // Add a new class to this mask as we want it to look different from the default.
          splashscreen.addCls('splashscreen');
@@ -107,7 +105,8 @@ Ext.define('Packt.Application', {
                             success: function(conn, response, options, eOpts) {
                                 var result = Packt.util.Util.decodeJSON(conn.responseText);
                                 if (result.success) {
-                                    Ext.create('Packt.view.MyViewport');
+                                    Ext.widget('mainviewport');
+                                    // Ext.create('Packt.view.MyViewport');
                                     Packt.util.SessionMonitor.start();
                                 } else {
                                     Ext.widget('login');
