@@ -36,7 +36,9 @@ Ext.define('Packt.Application', {
         'Packt.view.film.FilmWindow',
         'Ext.form.CheckboxGroup',
         'Packt.view.film.SearchCategory',
-        'Packt.view.film.SearchActor'
+        'Packt.view.film.SearchActor',
+
+        'Packt.view.MyViewport',
     ],
 
     views: [
@@ -99,7 +101,22 @@ Ext.define('Packt.Application', {
                 remove:true,
                 listeners: {
                     afteranimate: function(el, startTime, eOpts ){
-                        Ext.widget('login');
+                        // Ext.widget('login');
+                        Ext.Ajax.request({
+                            url: 'php/auth.php',
+                            success: function(conn, response, options, eOpts) {
+                                var result = Packt.util.Util.decodeJSON(conn.responseText);
+                                if (result.success) {
+                                    Ext.create('Packt.view.MyViewport');
+                                    Packt.util.SessionMonitor.start();
+                                } else {
+                                    Ext.widget('login');
+                                }
+                            },
+                            failure: function(conn, response, options, eOpts) {
+                                Packt.util.Util.showErrorMsg(conn.responseText);
+                            }
+                        });
                     }
                 }
             });
