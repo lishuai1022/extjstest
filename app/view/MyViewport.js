@@ -33,7 +33,7 @@ Ext.define('Packt.view.MyViewport', {
             region: 'south',
             height: 30,
             style: 'border-top: 1px solid #4c72a4;',
-            html: '<div id="titleHeader"><center><span style="font-size:10px;">Mastering ExtJS book - Loiane Groner - http://packtpub.com</span></center></div>'
+            html: '<div id="titleHeader"><center><span style="font-size:10px;">财富桥策略平台管理系统 - 1.0版</span></center></div>'
         }
     ]
 });

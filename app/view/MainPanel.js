@@ -13,8 +13,9 @@ Ext.define('Packt.view.MainPanel', {
             xtype: 'panel',
             closable: false,
             iconCls: 'home',
-            title: 'Home',
-            layout: 'fit'
+            title: '首页',
+            layout: 'fit',
+            // html:'<div id="titleHeader">财富桥策略平台管理系统<span style="font-size:12px;"> - 1.0版</span></div>',
             // items: [{
             //     xtype: 'uxiframe',
             //     src: 'http://www.packtpub.com/mastering-ext-javascript/book'

@@ -11,5 +11,5 @@ Ext.define('Packt.view.menu.Accordion', {
     collapsible: false,
     hideCollapseTool: false,
     iconCls: 'sitemap',
-    title: 'Menu'
+    title: '菜单'
 });
