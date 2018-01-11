@@ -1,0 +1,4 @@
+1.函数
+    init
+    launch
+    init先于launch执行

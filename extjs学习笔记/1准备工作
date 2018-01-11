@@ -1,0 +1,11 @@
+1.下载资源：
+    sencha cmd 4.0.5
+    extjs包(sdk) 4.2.1
+
+2.建立应用代码：
+    cd extjs包目录
+    sencha generate app myext ../myext
+
+3.配置虚拟主机 
+    extjstest.com,把生成的myext项目源代码拷贝进去
+

@@ -1,0 +1,16 @@
+1.在launch函数内判断，登录了render主页面，否则，弹出登录窗口；
+2.php端：
+    extjs加载时，已打开session；
+    取出session中的数据，返回登录与否即可
+
+3.本地git版本控制：
+    git init
+    只需要本地记录修改的版本即可，不需要push
+
+//控制器中init绑定元素事件
+//控制器中配置stores views refs models,会自动产生获取store函数的getter方法
+
+问题？
+    //1.extjs框架的MVC或MVVM是如何工作的？(见收藏夹网页)
+    //2.代码加载的流程是什么？(html页面为宿主页面，引入css,extjs,app.js,启动extjs应用)
+    //3.单页面应用：只有一个页面，全是通过js异步交互，不刷新页面，不用iframe.
