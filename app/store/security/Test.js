@@ -1,4 +1,4 @@
-Ext.define('Packt.store.security.Tests', {
+Ext.define('Packt.store.security.Test', {
     extend: 'Ext.data.Store',
 
     requires: [

@@ -4,7 +4,7 @@ Ext.define('Packt.view.security.TestLeft', {
     title:'交易账户列表',
 
     frame: true,
-    store: Ext.create('Packt.store.security.Tests'),
+    store: Ext.create('Packt.store.security.Test'),
 
     columns: [
         {
