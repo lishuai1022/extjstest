@@ -24,13 +24,15 @@ Ext.define('Packt.controller.TranslationManager', {
     },
 
     onSplitbuttonBeforeRender: function(abstractcomponent, options) {
-        var lang = localStorage ? (localStorage.getItem('user-lang') || 'en') : 'en';
+        var lang = localStorage ? (localStorage.getItem('user-lang') || 'cn') : 'cn';
         abstractcomponent.iconCls = lang;
 
         if (lang == 'en'){
             abstractcomponent.text = 'English';
         } else if (lang == 'es'){
             abstractcomponent.text = 'Español';
+        } else if (lang == 'cn'){
+            abstractcomponent.text = '中文';
         } else {
             abstractcomponent.text = 'Português';
         }

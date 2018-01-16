@@ -59,7 +59,8 @@ Ext.define('Packt.Application', {
         'reports.SalesFilmCategory',
         'mail.Mail',
 
-        'security.Test'
+        'security.Test',//测试模块
+        'privilege.Role',//权限管理-角色管理
     ],
 
     splashscreen: {},

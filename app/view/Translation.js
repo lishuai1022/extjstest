@@ -6,6 +6,11 @@ Ext.define('Packt.view.Translation', {
         items: [
             {
                 xtype: 'menuitem',
+                iconCls: 'cn',
+                text: '中文'
+            },
+            {
+                xtype: 'menuitem',
                 iconCls: 'en',
                 text: 'English'
             },
