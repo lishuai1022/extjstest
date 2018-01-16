@@ -1,0 +1,5 @@
+requires中配置的类，将在本类之前加载。
+
+refs配置项，会在控制器中生成getter方法，利用ComponentQuery配置对象的selector。
+
+Application.js引入控制器，控制器中引入views models stores refs requires等。

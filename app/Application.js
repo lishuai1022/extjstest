@@ -57,7 +57,9 @@ Ext.define('Packt.Application', {
         'cms.Films',
         'Abstract',
         'reports.SalesFilmCategory',
-        'mail.Mail'
+        'mail.Mail',
+
+        'security.Test'
     ],
 
     splashscreen: {},
