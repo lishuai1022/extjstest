@@ -1,9 +1,10 @@
 Ext.define('Packt.view.privilege.PriRight', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.priright',
-    title:'角色管理',
+    title:'角色管理rr',
+    // border:false,
 
-    frame: true,
+    // frame: true,
     store: Ext.create('Packt.store.privilege.Role'),
 
     columns: [
