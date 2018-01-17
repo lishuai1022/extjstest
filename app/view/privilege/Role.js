@@ -2,8 +2,6 @@ Ext.define('Packt.view.privilege.Role', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.role',
     border:false,
-    margins: '5 5 5 5',
-
 
     requires: [
         'Packt.view.privilege.PriLeft1',
@@ -13,12 +11,15 @@ Ext.define('Packt.view.privilege.Role', {
 
     layout: {
         type: 'border',
-        // style:{'background':'#fff'},
+        padding:'5',
     },
+    bodyStyle: {  
+        backgroundColor: 'white',  
+        backgroundImage: 'none'  
+    }, 
 
     items: [
         {
-            // xtype: 'prileft1',
             region: 'west',
             width:'55%',
             layout:'anchor',

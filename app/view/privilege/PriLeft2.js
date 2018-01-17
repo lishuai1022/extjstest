@@ -1,7 +1,7 @@
 Ext.define('Packt.view.privilege.PriLeft2', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.prileft2',
-    title:'角色管理22',
+    title:'角色相关用户管理',
     // border:false,
 
     // frame: true,

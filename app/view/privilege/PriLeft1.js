@@ -1,20 +1,26 @@
 Ext.define('Packt.view.privilege.PriLeft1', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.prileft1',
-    title:'角色管理11',
-    // border:false,
+    title:'角色管理',
+    style:{marginBottom:'5px'},
 
     // frame: true,
     store: Ext.create('Packt.store.privilege.Role'),
+    tools:[
+        {
+            xtype:'button',
+            text:'新建',
+        }
+    ],
 
     columns: [
         {
-            text: '账户ID',  
+            text: '角色代码',  
             dataIndex:'account_id',
             flex: 0.5
         },
         {
-            text: '类型',  
+            text: '角色名称',  
             dataIndex:'type',
             flex: 1,
             renderer:function(val){
@@ -26,32 +32,22 @@ Ext.define('Packt.view.privilege.PriLeft1', {
             },
         },
         {
-            text:'代码',
+            text:'角色描述',
             dataIndex:'code',
             flex: 1,
-        },
-        {
-            text: '名称',  
-            dataIndex:'name',
-            flex: 1,
-        },
-        {
-            text: '禁用',  
-            dataIndex:'disable',
-            width:70,
-            renderer:function(val){
-                if(val==0) {
-                    return '否';
-                }else{
-                    return '是';
-                }
-            },
         },
         {
             text: '创建时间',  
             dataIndex:'create_time',
             flex: 1,
-            // menuDisabled:true,
         },
+        {
+            text: '更新时间',  
+            dataIndex:'create_time',
+            flex:1,
+        },
+        {
+            text:'操作',
+        }
     ]
 });
