@@ -5,7 +5,7 @@ Ext.define('Packt.view.privilege.PriRight', {
     // border:false,
 
     // frame: true,
-    store: Ext.create('Packt.store.privilege.Role'),
+    store: Ext.create('Packt.store.privilege.Module'),
 
     columns: [
         {
