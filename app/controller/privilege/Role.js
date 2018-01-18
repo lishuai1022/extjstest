@@ -61,6 +61,7 @@ Ext.define('Packt.controller.privilege.Role', {
         // console.log(RoleUserStore);
         // RoleUserStore.load();
         this.getPrileft2().getStore().load();
+        this.getPriright().getStore().load();
     }
 
     
